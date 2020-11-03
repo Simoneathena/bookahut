@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome l BookaHUT</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/accordion.css">
+</head>
+
+<body class="page_body">
+    <header class="header_flexbox">
+        <div class="logo">Booka<span class="logo_hutpart">HUT</span></div>
+        <a href="#main_loginform" class="header_login">Log in</a>
+
+
+
+    </header>
+
+    <main>
+        <section class="image_container">
+            <form class="main_searchform">
+                <div class="maxpersons">
+
+                    <input type="radio" class="radiobuttom" id="small" name="hutsize" value="3 persons">
+                    <label class="formlabel" for="small">
+                        <img src="icons/house-24px.svg" class="huticon" alt="hut icon">Max 3 persons
+                    </label>
+
+                    <input type="radio" class="radiobuttom" id="medium" name="hutsize" value="8 persons">
+                    <label class="formlabel" for="medium">
+                        <img src="icons/house-24px.svg" class="huticon" alt="hut icon">Max 8 persons
+                    </label>
+
+                    <input type="radio" class="radiobuttom" id="large" name="hutsize" value="12 persons">
+                    <label class="formlabel" for="large">
+                        <img src="icons/house-24px.svg" class="huticon" alt="hut icon">Max 12 persons
+                    </label>
+
+
+                </div>
+
+                <div class="traveldates">
+                    <div>
+                        <label for="formdate" class="date_label">From</label>
+                        <input type="date" id="formdate" class="date_field">
+
+                        <label for="todate" class="date_label">To</label>
+                        <input type="date" id="todate" class="date_field"> </div>
+
+                    <button type="button" id="search_button" class="search_button">Search</button>
+
+                </div>
+
+
+            </form>
+
+
+        </section>
+
+        <div class="content_section">
+            <section class="searchresults_section">
+                <h1 class="searchresults_heading">Search results</h1>
+                <div id="no_searchresults">
+                    Nothing to show right now. Please give us your travel information and we will find the best accommondation for you!</div>
+
+                <ul class="accordion" id="searchresults_list">
+                    <li>
+                        <a href="#first" class="accordion__header">Sunflower, 3 persons hut, kr. 4500,-</a>
+                        <div class="accordion__content" id="first">
+                            <div class="accordion__paragraph">
+                                <div class="accordion_card">
+                                    <img src="icons/bathtub-24px.svg" alt="icon">Available<br>
+                                    <img src="icons/smoke_free-24px.svg" alt="icon">No smoking
+                                </div>
+                                <div class="accordion_card">
+                                    <img src="icons/tv-24px.svg" alt="icon">Available<br>
+                                    <img src="icons/wifi-24px.svg" alt="icon">Not available
+                                </div>
+                                <div class="accordion_card">
+                                    <form><button class="book_button">Book now!</button></form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <a href="#second" class="accordion__header">Kombardo, 8 persons hut, kr. 9000,-</a>
+                        <div class="accordion__content" id="second">
+                            <div class="accordion__paragraph">
+                                <div class="accordion_card">
+                                    <img src="icons/bathtub-24px.svg" alt="icon">Available<br>
+                                    <img src="icons/smoke_free-24px.svg" alt="icon">No smoking
+                                </div>
+                                <div class="accordion_card">
+                                    <img src="icons/tv-24px.svg" alt="icon">Available<br>
+                                    <img src="icons/wifi-24px.svg" alt="icon">Not available
+                                </div>
+                                <div class="accordion_card">
+                                    <form><button class="book_button">Book now!</button></form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#third" class="accordion__header">The Moutains, 12 persons hut, kr. 19.000,-</a>
+                        <div class="accordion__content" id="third">
+                            <div class="accordion__paragraph">
+                                <div class="accordion_card">
+                                    <img src="icons/bathtub-24px.svg" alt="icon">Available<br>
+                                    <img src="icons/smoke_free-24px.svg" alt="icon">No smoking
+                                </div>
+                                <div class="accordion_card">
+                                    <img src="icons/tv-24px.svg" alt="icon">Available<br>
+                                    <img src="icons/wifi-24px.svg" alt="icon">Not available
+                                </div>
+                                <div class="accordion_card">
+                                    <form><button class="book_button">Book now!</button></form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+            </section>
+            <div class="main_flexbox">
+                <form class="main_login" id="main_loginform">
+                    <fieldset>
+                        <legend class="form_label">Log in to see your resevation</legend>
+                        <input type="email" placeholder="Username" class="form_field">
+                        <input type="password" placeholder="Password" class="form_field">
+                        <button type="button" class="form_field form_button">Log in</button>
+                    </fieldset>
+                </form>
+                <section class="main_new">
+                    <h5 class="new_heading">New to BookaHUT?</h5>
+                    <div class="main_inner_new">
+                        <ol class="new_list">
+                            <li>Give us your travel information</li>
+                            <li>We will find the best accommondation</li>
+                            <li>Browser our suggestions</li>
+                            <li>Book the hut you like!</li>
+                        </ol>
+
+                    </div>
+
+                </section>
+
+
+            </div>
+
+        </div>
+
+    </main>
+<footer>
+
+    </footer>
+
+
+    <script src="js/hutpicker.js"></script>
+</body></html>
